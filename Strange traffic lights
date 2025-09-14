@@ -1,0 +1,18 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    int lampu, ulang;
+    cout<<"Masukkan detik ke-:";
+    cin >> lampu;
+    lampu = lampu - 44;
+    ulang = lampu % 103;
+    if (ulang >=1 && ulang <=3) {
+        cout << "kuning";
+    } else if (ulang >= 4 && ulang <=83) {
+        cout << "merah";
+    } else {
+        cout << "hijau";
+    }
+    return 0;
+}
