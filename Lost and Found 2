@@ -1,0 +1,21 @@
+#include <iostream>
+#include <cstring>
+using namespace std;
+
+int main() {
+    char nama [30];
+    int index, i, x;
+    cout<<"Masukkan sandi:\n";
+    cin >> nama;
+    index = strlen(nama);
+    index = 1;
+    for (i=index; i >= 0; i--) {
+        int x = nama [i];
+        if (x >= 65 && x <= 90) {
+            cout << nama[i];
+        } else if (x >= 97 && x <= 122) {
+            cout << nama[i];
+        }
+    } 
+    return 0;
+}
